@@ -82,11 +82,19 @@ function createProfile(){
       nameError.style.display = 'block'
     }
 
+    else {
+      nameError.style.display = 'none';
+    }
+
     if (emailValue === ''){
       emailError.innerText = "Don't leave blank."
       emailError.style.display = 'block'
     }
 
+    else{
+      emailError.style.display = 'none';
+    }
+    
     // Condition 1: Check if password is shorter than 16 characters
     if (pwLength < 16) {
       errorText.innerText = "Password must be longer than 16 characters.";
