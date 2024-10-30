@@ -1,0 +1,83 @@
+body{
+    background-color: #212121ff;
+    
+}
+
+main {
+    display: grid;
+    grid-template-areas:
+        "topbar title admin"
+        "settings content sidebar"
+        "footer footer footer";
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px auto 200px ;
+    gap: 0 50px;
+}
+
+h1{
+    grid-area: title;
+    color: white;
+    text-align: center;
+
+}
+
+
+.adminLog{
+    grid-area: admin;
+    padding-left: 200px;
+    padding-top: 20px;
+}
+
+.adminLog input{
+    border-radius: 20px;
+    text-align: right;
+    width: 150px;
+    height: 35px;
+
+}
+
+.logMenu{
+    grid-area: content;
+    background-color: #2f303a;
+    outline-width: 2px;
+    outline-style: solid;
+    margin: auto;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.logMenu input, button{
+    border-radius: 20px;
+    text-align: right;
+    width: 150px;
+    height: 35px;
+    margin: 10px;
+}
+
+.logInfo .or{
+    text-align: center;
+    margin: -5px;
+    color: white;
+}
+
+.logInfo input, button{
+    width: 320px;
+    padding: 10px;
+}
+
+.logInfo button, .newUBtn button{
+    text-align: center;
+    cursor: pointer;
+}
+
+.errorText{
+    color: rgb(207, 36, 36);
+    text-align: right;
+    padding-right: 20px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    display: none;
+    width: 325px;    
+    text-wrap: wrap;
+}

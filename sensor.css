@@ -1,0 +1,98 @@
+body{
+    background-color: #212121ff;
+    
+}
+
+main {
+    display: grid;
+    grid-template-areas:
+        "topbar title admin"
+        "settings content sidebar"
+        "footer footer footer";
+    
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 200px auto 200px ;
+    gap: 0 50px;
+}
+
+h3{
+    grid-area: topbar;
+    color: white;
+    margin-left: 10px;
+}
+
+p{
+    color: white;
+}
+
+button{
+    cursor: pointer;
+}
+
+.logOutBtn{
+    grid-area: topbar;
+    margin: 10px;
+    width: 75px;
+    height: 25px;
+}
+
+.building{
+    grid-area: content;
+    background-color: #2f303a;
+    padding: 20px;
+    border-radius: 15px;
+    justify-items: center;
+    position: relative;
+
+    max-width: 550px;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.floor{
+    background-color: #434552;
+    padding: 5px;
+    border-radius: 15px;
+    width: 120px;  
+    margin: 10px;  
+}
+
+
+.floorCtrl{
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.floorCtrl button{
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.element{
+    display: inline-table;
+    width: 35px;
+    text-align: center;
+
+}
+
+.element button{
+    border-radius: 5px;
+    width: 35px;
+}
+
+.addBtn{
+    position: absolute;
+    bottom: 10px; 
+    right: 10px; 
+}
+.addBtn button{
+    width: 30px;
+    height: 30px;
+    margin: -20px;
+    border-radius: 10px;
+}
+

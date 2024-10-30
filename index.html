@@ -1,0 +1,52 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DDS</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <main>
+    <h1>Login Page</h1>
+
+    <div class="adminLog">
+      <input id="adminLog" placeholder="Admin login">
+    </div>
+
+    <div class="logMenu">
+      <h1 id="logPrompt">Enter Your Information</h1>
+      <div class="logInfo" id="logInfo">
+
+        <div>
+          <input id="uName" placeholder="Name"> 
+          <p class="errorText" id="nameError">error</p>
+        </div>
+
+        <div>
+          <input id="email" placeholder="Email">
+          <p class="errorText" id="emailError">error</p>
+        </div>
+
+        <div>
+          <input id="pWord" placeholder="Password">
+          <p class="errorText" id="errorText1">error</p>
+        </div>
+
+        <div>
+          <button id="logBtn">Login</button>
+        </div>
+
+        <p id="or" class="or">or</p>
+  
+      </div>
+
+      <div class = 'newUBtn'>
+        <button onclick="createProfile()">Create Account</button>
+      </div>
+
+    </div>
+  <script src="login.js"></script>  
+  </main>
+</body>
+</html>
