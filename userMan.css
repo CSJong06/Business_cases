@@ -1,0 +1,71 @@
+body{
+    background-color: #212121ff;
+    
+}
+
+main {
+    display: grid;
+    grid-template-areas:
+        "topbar title admin"
+        "settings content sidebar"
+        "footer footer footer";
+    
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 100px auto 200px ;
+    
+}
+
+button{
+    cursor: pointer;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    grid-area: title;
+}
+
+.senBtn{
+    margin: 20px;
+    width: 100px;
+}
+
+.userMan{
+    grid-area: content;
+    background-color: #2f303a;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+
+.userItem{
+    padding-bottom: 20px;
+}
+.userItem input, button{
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.remBtn{
+    color: white;
+    background-color: #ff0000ff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.resBtn{
+    color: white;
+    background-color: #cc4125ff;
+}
+.updBtn{
+    color: white;
+    background-color: #6d9eebff;
+}
+
+.addBtn{
+    width: 30px;
+    height: 30px;
+    background-color: #6aa84fff;
+}
